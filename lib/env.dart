@@ -1207,7 +1207,7 @@ Map<String, dynamic> environment = {
 
   "appRatingConfig": {
     'showOnOpen': false,
-    'android': 'com.kanzalsahra.store',
+    'android': 'com.khtwah.kanzalsahra',
     'ios': '1469772800',
     'minDays': 7,
     'minLaunches': 10,
@@ -1630,7 +1630,7 @@ Map<String, dynamic> environment = {
     //The link your app will open
     "link": "https://kanzalsahra.com/",
     //----------* Android Setting *----------//
-    "androidPackageName": "com.kanzalsahra.store",
+    "androidPackageName": "com.khtwah.kanzalsahra",
     "androidAppMinimumVersion": 1,
     //----------* iOS Setting *----------//
     "iOSBundleId": "com.inspireui.mstore.flutter",
@@ -1764,12 +1764,12 @@ Map<String, dynamic> environment = {
     },
     "applePayConfig": {
       "enable": true,
-      "merchantId": "merchant.com.kanzalsahra.store",
+      "merchantId": "merchant.com.khtwah.kanzalsahra",
     },
     "googlePayConfig": {
       "enable": true,
       "stripePublishableKey": "pk_test_O3awus9i5mA2wIX9a7pU3MSi00gZPcpJWX",
-      "merchantId": "merchant.com.kanzalsahra.store"
+      "merchantId": "merchant.com.khtwah.kanzalsahra"
     },
   },
   "stripeConfig": {
@@ -1799,7 +1799,7 @@ Map<String, dynamic> environment = {
     "secret":
     "ECbFREri7NFj64FI_9WzS6A0Az2DqNLrVokBo0ZBu4enHZKMKOvX45v9Y1NBPKFr6QJv2KaSp5vk5A1G",
     "returnUrl":
-    "com.kanzalsahra.store://paypalpay",
+    "com.khtwah.kanzalsahra://paypalpay",
     // Example: "your.android.package.name:://paypalpay"
     "production": false,
     "paymentMethodId": "paypal",
@@ -1871,11 +1871,11 @@ Map<String, dynamic> environment = {
   },
   "inAppPurchaseConfig": {
     'consumableProductIDs': [
-      'com.kanzalsahra.store.test',
+      'com.khtwah.kanzalsahra.test',
     ],
     'nonConsumableProductIDs': [],
     'subscriptionProductIDs': [
-      'com.kanzalsahra.store.subscription.test',
+      'com.khtwah.kanzalsahra.subscription.test',
     ],
     "enabled": false
   },

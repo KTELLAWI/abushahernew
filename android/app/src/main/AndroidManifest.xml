@@ -54,7 +54,10 @@
             <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
                 android:resource="@style/NormalTheme" />
-
+                 <!-- <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value= "ca-app-pub-3940256099942544~3347511713" /> -->
+            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -100,12 +103,12 @@
             android:exported="false"
             tools:replace="android:authorities" />
 
-        <provider
+        <!-- <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
             android:authorities="com.khtwah.kanzalsahra.mobileadsinitprovider"
             android:value="ca-app-pub-3940256099942544~3347511713"/>
             android:exported="false"
-            tools:replace="android:authorities" />
+            tools:replace="android:authorities" /> -->
 
         <!-- Other configurations like meta-data, services, etc. -->
         <meta-data android:name="flutterEmbedding" android:value="2" />
