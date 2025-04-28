@@ -83,11 +83,11 @@ android {
         checkReleaseBuilds false
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = '1.8'
     }
     tasks.withType(JavaCompile).configureEach {
         options.warnings = false
@@ -104,13 +104,13 @@ android {
         multiDexEnabled true
 
         // // Zoho SalesIQ Mobilisten
-        // Comment resConfigs "en" to fix Zoho SaleIQ not support
+        // Comment `resConfigs "en"` to fix Zoho SaleIQ not support
         // multi-language on Android.
         // Un-comment to reduce build size.
         resConfigs "en"
 
-        // Using manifestPlaceholders will replace the param on
-        // AndroidManifest.xml file with the correct value.
+        // Using `manifestPlaceholders` will replace the param on
+        // `AndroidManifest.xml` file with the correct value.
         // For example: <meta-data android:name="default-url"
         // android:value="${websiteUrl}" />
         // will be <meta-data android:name="default-url" android:value="inspireui.com" />
@@ -131,11 +131,11 @@ android {
                 branchTestAlternateLinkDomain: envProperties.getProperty('branchTestAlternateLinkDomain', '')
         ]
 
-        // If you use resValue, it will generate a resource of the type you
+        // If you use `resValue`, it will generate a resource of the type you
         // specify into your app's res directory.
         resValue 'string', 'facebookAppId', envProperties.getProperty('facebookAppId', '')
 
-        // Not sure why we need to use appName as resValue.
+        // Not sure why we need to use `appName` as resValue.
         resValue 'string', 'app_name', envProperties.getProperty('appName', '')
         // Notification color for Firebase
         resValue 'color', 'notification_color', '#' + envProperties.getProperty('notificationColor', 'FF2EB0FE')
@@ -156,7 +156,7 @@ android {
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so flutter run --release works.
+            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.release
 
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -184,3 +184,46 @@ dependencies {
 }
 
 googleServices { disableVersionCheck = true }
+
+tasks.register('copyGoogleServices', Copy) {
+    from '../../configs'
+    include 'google-services.json'
+    into '.'
+}
+
+def notificationIcon = envProperties.getProperty('notificationIcon', '')
+tasks.register('copyNotificationIcon', Copy) {
+    from '../../configs/'
+    include notificationIcon
+    into './src/main/res/drawable/'
+    rename { String fileName ->
+        fileName.replace(notificationIcon, 'ic_stat_onesignal_default.png')
+    }
+    doLast {
+        def originalFile = rootProject.file('./src/main/res/drawable/' + notificationIcon)
+        if (originalFile.exists()) {
+            originalFile.delete()
+        }
+    }
+}
+
+tasks.register('copyConfigFiles', Copy) {
+    from '../../configs/customized/'
+    include '**'
+    into '../../'
+}
+
+def notificationIconFile = rootProject.file('../configs/' + notificationIcon)
+if (notificationIcon && notificationIconFile.exists()) {
+    println "🔧 Copying configs/" + notificationIcon + " to android/app/src/main/res/drawable/ic_stat_onesignal_default.png"
+    preBuild.dependsOn(copyNotificationIcon)
+}
+
+println "🔧 Copying configs/google-services.json to android/app/google-services.json"
+preBuild.dependsOn(copyGoogleServices)
+
+println "🔧 Copying configs/customized to project..."
+preBuild.dependsOn(copyConfigFiles)
+
+println "\n🪄  Building " + envProperties['appName'] + "... 🪄\n"
+println "\n🔑 Signing with keystore " + envProperties['storeFile'] + "... 🔑\n"
