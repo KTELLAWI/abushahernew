@@ -7,7 +7,7 @@ import '../common/config.dart';
 import '../common/constants.dart';
 import '../frameworks/woocommerce/services/woo_mixin.dart';
 import '../frameworks/wordpress/services/wordpress_mixin.dart';
-// import '../modules/advertisement/index.dart' show AdvertisementServiceImpl;
+import '../modules/advertisement/index.dart' show AdvertisementServiceImpl;
 import '../modules/digits_mobile_login/services/digits_mobile_login_service_mixin.dart';
 
 import '../modules/tera_wallet/services/wallet_service_mixin.dart';
@@ -44,7 +44,7 @@ class Services
 
   /// using AdvertisementService when disable the Advertisement
   // final AdvertisementService advertisement = AdvertisementService();
- // final AdvertisementService advertisement = AdvertisementServiceImpl();
+  final AdvertisementService advertisement = AdvertisementServiceImpl();
 
   final ChatServices chatServices = ChatServices();
 

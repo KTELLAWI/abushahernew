@@ -241,21 +241,21 @@ class AppState extends State<App>
     });
 
     /// init Facebook & Google Ads
-    //initAds();
+    initAds();
     super.initState();
   }
 
   void initAds() async {
     await AppTracking.requestAuthorization();
 
-    //Services().advertisement.initAdvertise(_app!.advertisement);
+    Services().advertisement.initAdvertise(_app!.advertisement);
   }
 
   @override
   void dispose() {
     _subAppCookieExpiry?.cancel();
     WidgetsBinding.instance.removeObserver(this);
-   // Services().advertisement.dispose();
+    Services().advertisement.dispose();
     super.dispose();
   }
 
@@ -509,8 +509,8 @@ class AppState extends State<App>
                         child: Column(
                           children: [
                             Expanded(child: widget!),
-                           // if (!ServerConfig().isBuilder)
-                             // Services().advertisement.getAdWidget(),
+                            if (!ServerConfig().isBuilder)
+                              Services().advertisement.getAdWidget(),
                           ],
                         ),
                       ),

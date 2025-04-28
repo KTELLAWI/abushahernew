@@ -148,7 +148,7 @@ class MainTabsState extends CustomOverlayState<MainTabs>
     final authorized = await AppTracking.requestAuthorization();
 
     if (authorized) {
-     // Services().advertisement.requestConsentInfoUpdate();
+      Services().advertisement.requestConsentInfoUpdate();
     }
   }
 
