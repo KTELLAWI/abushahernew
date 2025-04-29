@@ -1,15 +1,19 @@
 // ignore_for_file: prefer_single_quotes, lines_longer_than_80_chars final
 Map<String, dynamic> environment = {
   //"appConfig": "lib/config/config_en.json",
-   "appConfig": "https://ap-apps.com/kanzalsahra/config_en.json",
+   "appConfig": "https:/abushaherdabayh.site/wp-content/uploads/flutter_config_files/config_ar.json",
     // "appConfig": "lib/config/config_ar.json",
 
 
   "serverConfig": {
-    "url": "https://kanzalsahra.com",
-    "type": "woo",
-    "consumerKey": "ck_3a6a2f5388bf3a924beea14d38e51ac373a3413d",
-    "consumerSecret": "cs_50257be1e041f4cce7cb05b5c16a5501ba589871"
+    'type': 'woo',
+    'url': 'https://abushaher.vps.webdock.cloud',
+    'consumerKey': 'ck_1522d8e2c88b48d1c36b23ac2407cf85debbc1c9',
+    'consumerSecret': 'cs_908c342beced94fc5c91dddcf0ebe415674089b1',
+    // "url": "https://kanzalsahra.com",
+    // "type": "woo",
+    // "consumerKey": "ck_3a6a2f5388bf3a924beea14d38e51ac373a3413d",
+    // "consumerSecret": "cs_50257be1e041f4cce7cb05b5c16a5501ba589871"
 
     /// Wordpress blog, it could be removed if using the same above url
     //'blog': 'https://mstore.io',
