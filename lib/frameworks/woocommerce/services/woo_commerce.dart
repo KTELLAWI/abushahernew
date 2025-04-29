@@ -60,13 +60,13 @@ class WooCommerceService extends BaseServices {
     String? blogDomain,
     required String consumerKey,
     required String consumerSecret,
-  })  : wcApi = WooCommerceAPI(domain, consumerKey, consumerSecret),
+  })  : wcApi = WooCommerceAPI("https://abushaher.vps.webdock.cloud", "ck_1522d8e2c88b48d1c36b23ac2407cf85debbc1c9", "cs_908c342beced94fc5c91dddcf0ebe415674089b1"),
         isSecure = domain.contains('https') ? '' : '&insecure=cool',
         super(
           blogDomain: blogDomain ?? domain,
           reviewService: ReviewService.create(
             factoryReviewServiceNative: () => WooReviewService(
-              WooCommerceAPI(domain, consumerKey, consumerSecret),
+               WooCommerceAPI("https://abushaher.vps.webdock.cloud", "ck_1522d8e2c88b48d1c36b23ac2407cf85debbc1c9", "cs_908c342beced94fc5c91dddcf0ebe415674089b1"),
             ),
           ),
         ) {
