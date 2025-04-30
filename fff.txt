@@ -1,0 +1,10 @@
+This app is not authorized to use Firebase Authentication. Please verify that the correct package name, SHA-1, and SHA-256 are configured in the Firebase Console. [ Invalid app info in play_integrity_token ]
+
+./gradlew signingReport
+5B6714C96EA559C40022774649EDE345B3B121389FD11ECCFB8E334D4670F0DD
+5B6714C96EA559C40022774649EDE345B3B121389FD11ECCFB8E334D4670F0DD
+d087f0616fb1139bc19edc18f549f3dd3a1c1eb1
+4836730003643875
+await FirebaseAuth.instance.setSettings(
+  appVerificationDisabledForTesting: false, // Set to true only for testing
+);

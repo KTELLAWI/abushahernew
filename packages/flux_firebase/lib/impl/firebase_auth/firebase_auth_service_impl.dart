@@ -100,17 +100,21 @@ class FirebaseAuthServiceImpl extends FirebaseAuthService {
     forceResendingToken,
     Duration? timeout,
   }) async {
-    await _auth.verifyPhoneNumber(
-        phoneNumber: phoneNumber!,
-        codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,
-        codeSent: codeSent,
-        timeout: timeout ?? const Duration(seconds: 120),
-        verificationCompleted: (phoneAuthCredential) {
-          verificationCompleted(phoneAuthCredential.smsCode);
-        },
-        verificationFailed: (error) =>
-            verificationFailed?.call(error.toEntityApp()),
-        forceResendingToken: forceResendingToken);
+    await _auth.setSettings(
+  appVerificationDisabledForTesting: false, // Set to true only for testing
+);
+    // await _auth.verifyPhoneNumber(
+    //     phoneNumber: phoneNumber!,
+    //     codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,
+    //     codeSent: codeSent,
+    //     timeout: timeout ?? const Duration(seconds: 120),
+    //     verificationCompleted: (phoneAuthCredential) {
+    //       verificationCompleted(phoneAuthCredential.smsCode);
+    //     },
+    //     verificationFailed: (error) =>
+    //         verificationFailed?.call(error.toEntityApp()),
+    //     forceResendingToken: forceResendingToken);
+    print("fffffffffffffffffffffffffffffffffffffff");
   }
 
   @override

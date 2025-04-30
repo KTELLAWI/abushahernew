@@ -11,7 +11,7 @@ extension SettingStyleExt on SettingStyle {
         return SettingLayoutStyle01Widget(dataSettings: dataSettings);
       case SettingStyle.normal:
       default:
-        return SettingLayoutNormalWidget(dataSettings: dataSettings);
+        return SettingLayoutStyle01Widget(dataSettings: dataSettings);
     }
   }
 }

@@ -104,7 +104,7 @@ class WordPressService extends BaseServices {
   Future<User> loginSMS({String? token}) async {
     try {
       var idToken = await Services().firebase.getIdToken();
-      var endPoint = '$domain/wp-json/api/flutter_user/firebase_sms';
+      var endPoint = 'https://abushaher.vps.webdock.cloud/wp-json/api/flutter_user/firebase_sms';
 
       var response = await httpPost(endPoint.toUri()!,
           body: convert.jsonEncode({

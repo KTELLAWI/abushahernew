@@ -10,14 +10,12 @@
         {
             "layout": "category",
             "type": "icon",
-
             "wrap": false,
             "size": 2.0,
             "radius": 100.0,
             "enableBackground": false,
             "items": [
                 {
-
                     "category": 125,
                     "image": "https://kanzalsahra.com/wp-content/uploads/2024/03/9-150x150.jpg",
                     "showDescription": true,
@@ -29,7 +27,6 @@
                     ]
                 },
                 {
-
                     "category": 127,
                     "image": "https://kanzalsahra.com/wp-content/uploads/2024/03/8-150x150.jpg",
                     "showDescription": true,
@@ -41,7 +38,6 @@
                     ]
                 },
                 {
-
                     "category": 124,
                     "image": "https://kanzalsahra.com/wp-content/uploads/2024/03/10-150x150.jpg",
                     "showDescription": true,
@@ -53,7 +49,6 @@
                     ]
                 },
                 {
-
                     "category": 130,
                     "image": "https://kanzalsahra.com/wp-content/uploads/2024/03/7-150x150.jpg",
                     "showDescription": true,
@@ -63,9 +58,8 @@
                         "#3E6AB5",
                         "#3E6AB5"
                     ]
-                }
-                ,{
-
+                },
+                {
                     "category": 126,
                     "image": "https://kanzalsahra.com/wp-content/uploads/2024/03/3-150x150.jpg",
                     "showDescription": true,
@@ -97,10 +91,9 @@
                 {
                     "radius": 9.0,
                     "category": 28,
-                    "image": "https://kanzalsahra.com/wp-content/uploads/2024/09/IMG_20240914_155342_184.jpg",
+                    "image": "https://alsahra.com/wp-content/uploads/2024/09/IMG_20240914_155342_184.jpg",
                     "padding": 15.0
                 }
-
             ],
             "itemsWeb": [
                 {
@@ -120,8 +113,6 @@
                 }
             ]
         },
-
-
         {
             "name": "سبائك ذهب",
             "image": "",
@@ -134,23 +125,17 @@
             "design": "static",
             "fit": "fitWidth",
             "marginLeft": 0.0,
-
             "enableBackground": true,
             "items": [
                 {
                     "image": "https://kanzalsahra.com/wp-content/uploads/2024/09/IMG_20240904_184703_010-1.jpg",
-
                     "padding": 5.0,
                     "radius": 9.0
-
                 },
                 {
                     "image": "https://kanzalsahra.com/wp-content/uploads/2024/09/IMG_20240904_193015_557-1.jpg",
-
                     "padding": 5.0,
                     "radius": 9.0
-
-
                 }
             ],
             "marginBottom": 0.0,
@@ -158,7 +143,6 @@
             "marginRight": 0.0,
             "marginTop": 20.0
         },
-
         {
             "name": "سبائك ذهب تعليقات",
             "image": "",
@@ -172,22 +156,18 @@
             "layout": "twoColumn",
             "category": 127,
             "enableBackground": true
-        }
-        ,
+        },
         {
             "layout": "bannerImage",
             "design": "static",
             "fit": "fitWidth",
             "marginLeft": 0.0,
-
             "enableBackground": true,
             "items": [
                 {
                     "image": "https://kanzalsahra.com/wp-content/uploads/2024/09/IMG_20240904_184706_417-1.jpg",
-
                     "padding": 5.0,
                     "radius": 9.0
-
                 }
             ],
             "marginBottom": 0.0,
@@ -211,15 +191,12 @@
         "StickyHeader": false,
         "ShowChat": false,
         "useMaterial3": false
-
-
     },
     "TabBar": [
         {
             "layout": "home",
             "icon": "assets/icons/tabs/icon-home.png"
         },
-
         {
             "layout": "category",
             "categoryLayout": "card",
@@ -238,9 +215,6 @@
             "settingStyle": "normal"
         }
     ],
-    "searchSuggestion": [
-
-    ],
+    "searchSuggestion": [],
     "PrivacyPoliciesPageUrlOrId": "https://kanzalsahra.com/privacy-policy/"
-
 }

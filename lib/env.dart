@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_single_quotes, lines_longer_than_80_chars final
 Map<String, dynamic> environment = {
   //"appConfig": "lib/config/config_en.json",
-   "appConfig": "https:/abushaherdabayh.site/wp-content/uploads/flutter_config_files/config_ar.json",
-    // "appConfig": "lib/config/config_ar.json",
+   //"appConfig": "https:/abushaherdabayh.site/wp-content/uploads/flutter_config_files/config_ar.json",
+    "appConfig": "lib/config/config_ar.json",
 
 
   "serverConfig": {
@@ -48,7 +48,7 @@ Map<String, dynamic> environment = {
 
   "appRatingConfig": {
     'showOnOpen': false,
-    'android': 'com.kanzalsahra.store',
+    'android': 'online.digistacks.abushaher',
     'ios': '1469772800',
     'minDays': 7,
     'minLaunches': 10,
@@ -220,7 +220,7 @@ Map<String, dynamic> environment = {
 
     /// Support Digits : WordPress Mobile Number Signup and Login.
     /// Plugin (https://codecanyon.net/item/digits-wordpress-mobile-number-signup-and-login/19801105)
-    "EnableDigitsMobileLogin": true,
+    "EnableDigitsMobileLogin": false,
     "EnableDigitsMobileFirebase": false,
     "EnableDigitsMobileWhatsApp": false,
 
@@ -314,8 +314,8 @@ Map<String, dynamic> environment = {
     "order",
     //"point",
     //"rating",
-    "privacy",
-    "about",
+    //"privacy",
+   // "about",
   ],
   "loginSetting": {
     /// Set to false to disable both login and registration options
@@ -337,7 +337,7 @@ Map<String, dynamic> environment = {
 
     /// Set true value to show only the SMS Login screen, and set the false
     /// value to show default login screen with other login buttons.
-    "smsLoginAsDefault": false,
+    "smsLoginAsDefault": true,
 
     /// For Facebook login.
     /// These configs are only used for FluxBuilder's Auto build feature.
@@ -471,7 +471,7 @@ Map<String, dynamic> environment = {
     //The link your app will open
     "link": "https://kanzalsahra.com/",
     //----------* Android Setting *----------//
-    "androidPackageName": "com.kanzalsahra.store",
+    "androidPackageName": "online.digistacks.abushaher",
     "androidAppMinimumVersion": 1,
     //----------* iOS Setting *----------//
     "iOSBundleId": "com.inspireui.mstore.flutter",
@@ -605,12 +605,12 @@ Map<String, dynamic> environment = {
     },
     "applePayConfig": {
       "enable": true,
-      "merchantId": "merchant.com.kanzalsahra.store",
+      "merchantId": "merchant.online.digistacks.abushaher",
     },
     "googlePayConfig": {
       "enable": true,
       "stripePublishableKey": "pk_test_O3awus9i5mA2wIX9a7pU3MSi00gZPcpJWX",
-      "merchantId": "merchant.com.kanzalsahra.store"
+      "merchantId": "merchant.online.digistacks.abushaher"
     },
   },
   "stripeConfig": {
@@ -640,7 +640,7 @@ Map<String, dynamic> environment = {
     "secret":
     "ECbFREri7NFj64FI_9WzS6A0Az2DqNLrVokBo0ZBu4enHZKMKOvX45v9Y1NBPKFr6QJv2KaSp5vk5A1G",
     "returnUrl":
-    "com.kanzalsahra.store://paypalpay",
+    "online.digistacks.abushaher://paypalpay",
     // Example: "your.android.package.name:://paypalpay"
     "production": false,
     "paymentMethodId": "paypal",
@@ -712,11 +712,11 @@ Map<String, dynamic> environment = {
   },
   "inAppPurchaseConfig": {
     'consumableProductIDs': [
-      'com.kanzalsahra.store.test',
+      'online.digistacks.abushaher.test',
     ],
     'nonConsumableProductIDs': [],
     'subscriptionProductIDs': [
-      'com.kanzalsahra.store.subscription.test',
+      'online.digistacks.abushaher.subscription.test',
     ],
     "enabled": false
   },

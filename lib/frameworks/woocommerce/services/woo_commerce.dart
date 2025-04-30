@@ -775,9 +775,9 @@ class WooCommerceService extends BaseServices {
   Future<User> loginSMS({String? token}) async {
     try {
       var idToken = await Services().firebase.getIdToken();
-      var endPoint = '$domain/wp-json/api/flutter_user/firebase_sms';
+      var endPoint = 'https://abushaher.vps.webdock.cloud/wp-json/api/flutter_user/firebase_sms';
       if (kAdvanceConfig.enableNewSMSLogin) {
-        endPoint = '$domain/wp-json/api/flutter_user/firebase_sms_v2';
+        endPoint = 'https://abushaher.vps.webdock.cloud/wp-json/api/flutter_user/firebase_sms_v2';
       }
 
       var response = await httpPost(endPoint.toUri()!,

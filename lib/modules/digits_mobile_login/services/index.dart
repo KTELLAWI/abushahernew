@@ -14,7 +14,7 @@ class DigitsMobileLoginServices {
   Future<dynamic> _postRequest(String path, dynamic body) async {
     try {
       var response = await httpPost(
-          Uri.parse('$domain/wp-json/api/flutter_user/digits/$path'),
+          Uri.parse('https://abushaher.vps.webdock.cloud/wp-json/api/flutter_user/digits/$path'),
           body: convert.jsonEncode(body),
           headers: {'Content-Type': 'application/json'});
       return convert.jsonDecode(response.body);

@@ -2,154 +2,247 @@
     "HorizonLayout": [
         {
             "layout": "logo",
-            "showMenu": true,
-            "showSearch": true,
             "showLogo": true,
-            "enableBackground": true
+            "showSearch": true,
+            "showMenu": true
         },
         {
-            "layout": "bannerImage",
+            "layout": "bannerImage1",
             "isSlider": true,
+            "marginTop": 0,
+            "marginBottom": 0,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "height": 0.3,
+            "fit": "fill",
+            "items": [
+                {
+                    "image": "https://abushaherdabayh.site/wp-content/uploads/2022/10/meatSlider.jpg",
+                    "padding": 14.1,
+                    "category": null
+                },
+                {
+                    "padding": 14.1,
+                    "image": "https://abushaherdabayh.site/wp-content/uploads/2022/10/transporationcars.jpg",
+                    "category": null
+                }
+            ],
             "autoPlay": true,
-            "showNumber": false,
             "design": "default",
-            "showBackGround": true,
-            "radius": 2,
-            "enableBackground": true,
-            "items": [
-                {
-                    "radius": 9,
-                    "category": 29,
-                    "image": "https://kanzalsahra.com/wp-content/uploads/2024/09/IMG_20240914_160045_430.jpg",
-                    "padding": 15
-                },
-                {
-                    "radius": 9,
-                    "category": 28,
-                    "image": "https://kanzalsahra.com/wp-content/uploads/2024/09/IMG_20240914_155342_184.jpg",
-                    "padding": 15
-                }
-            ],
-            "itemsWeb": [
-                {
-                    "category": 29,
-                    "image": "https://cln.sh/41hyDrzG+",
-                    "padding": 15
-                },
-                {
-                    "category": 28,
-                    "image": "https://cln.sh/5nl2ZsKG+",
-                    "padding": 15
-                },
-                {
-                    "product": 30,
-                    "image": "https://cln.sh/q24Xpr1c+",
-                    "padding": 15
-                }
-            ]
+            "radius": 7.6,
+            "intervalTime": 5
         },
         {
-            "name": "سبائك ذهب",
-            "image": "",
             "layout": "twoColumn",
-            "category": 124,
-            "enableBackground": true
+            "name": "Recent Collections",
+            "isSnapping": true,
+            "rows": 3,
+            "columns": 0,
+            "imageBoxfit": "fill",
+            "imageRatio": 1.0397843326430722,
+            "hMargin": 6,
+            "vMargin": 0,
+            "hPadding": 0,
+            "vPadding": 0,
+            "pos": 600,
+            "showStockStatus": true,
+            "enableRating": true,
+            "hideTitle": false,
+            "hideStore": false,
+            "hidePrice": false,
+            "featured": false,
+            "showHeart": false,
+            "showCartButton": false,
+            "cartIconRadius": 9,
+            "showQuantity": false,
+            "showCartIconColor": false,
+            "showCartIcon": true,
+            "enableBottomAddToCart": false,
+            "cardDesign": "glass",
+            "borderRadius": 26,
+            "category": "27",
+            "tag": null
         },
         {
-            "layout": "bannerImage",
-            "design": "static",
-            "fit": "fitWidth",
-            "marginLeft": 0,
-            "enableBackground": true,
-            "items": [
-                {
-                    "image": "https://kanzalsahra.com/wp-content/uploads/2024/09/IMG_20240904_184703_010-1.jpg",
-                    "padding": 5,
-                    "radius": 9
-                },
-                {
-                    "image": "https://kanzalsahra.com/wp-content/uploads/2024/09/IMG_20240904_193015_557-1.jpg",
-                    "padding": 5,
-                    "radius": 9
-                }
-            ],
-            "marginBottom": 0,
-            "height": 0.15,
-            "marginRight": 0,
-            "marginTop": 20
-        },
-        {
-            "name": "سبائك ذهب تعليقات",
-            "image": "",
             "layout": "twoColumn",
-            "category": 125,
-            "enableBackground": true
+            "name": "Recent Collections",
+            "isSnapping": true,
+            "rows": 3,
+            "columns": 0,
+            "imageBoxfit": "fill",
+            "imageRatio": 1.0397843326430722,
+            "hMargin": 6,
+            "vMargin": 0,
+            "hPadding": 0,
+            "vPadding": 0,
+            "pos": 600,
+            "showStockStatus": true,
+            "enableRating": true,
+            "hideTitle": false,
+            "hideStore": false,
+            "hidePrice": false,
+            "featured": false,
+            "showHeart": false,
+            "showCartButton": false,
+            "cartIconRadius": 9,
+            "showQuantity": false,
+            "showCartIconColor": false,
+            "showCartIcon": true,
+            "enableBottomAddToCart": false,
+            "cardDesign": "glass",
+            "borderRadius": 26,
+            "category": "26",
+            "tag": null
         },
         {
-            "name": "سبائك ذهب الأسماء",
-            "image": "",
             "layout": "twoColumn",
-            "category": 127,
-            "enableBackground": true
+            "name": "Recent Collections",
+            "isSnapping": true,
+            "rows": 3,
+            "columns": 0,
+            "imageBoxfit": "fill",
+            "imageRatio": 1.0397843326430722,
+            "hMargin": 6,
+            "vMargin": 0,
+            "hPadding": 0,
+            "vPadding": 0,
+            "pos": 600,
+            "showStockStatus": true,
+            "enableRating": true,
+            "hideTitle": false,
+            "hideStore": false,
+            "hidePrice": false,
+            "featured": false,
+            "showHeart": false,
+            "showCartButton": false,
+            "cartIconRadius": 9,
+            "showQuantity": false,
+            "showCartIconColor": false,
+            "showCartIcon": true,
+            "enableBottomAddToCart": false,
+            "cardDesign": "glass",
+            "borderRadius": 26,
+            "category": "121",
+            "tag": null
         },
         {
-            "layout": "bannerImage",
-            "design": "static",
-            "fit": "fitWidth",
-            "marginLeft": 0,
-            "enableBackground": true,
-            "items": [
-                {
-                    "image": "https://kanzalsahra.com/wp-content/uploads/2024/09/IMG_20240904_184706_417-1.jpg",
-                    "padding": 5,
-                    "radius": 9
-                }
-            ],
-            "marginBottom": 0,
-            "height": 0.15,
-            "marginRight": 0,
-            "marginTop": 20
-        },
-        {
-            "name": "أحجار الماس",
-            "image": "",
             "layout": "twoColumn",
-            "category": 144,
-            "enableBackground": true
+            "name": "Recent Collections",
+            "isSnapping": true,
+            "rows": 3,
+            "columns": 0,
+            "imageBoxfit": "fill",
+            "imageRatio": 1.0397843326430722,
+            "hMargin": 6,
+            "vMargin": 0,
+            "hPadding": 0,
+            "vPadding": 0,
+            "pos": 600,
+            "showStockStatus": true,
+            "enableRating": true,
+            "hideTitle": false,
+            "hideStore": false,
+            "hidePrice": false,
+            "featured": false,
+            "showHeart": false,
+            "showCartButton": false,
+            "cartIconRadius": 9,
+            "showQuantity": false,
+            "showCartIconColor": false,
+            "showCartIcon": true,
+            "enableBottomAddToCart": false,
+            "cardDesign": "glass",
+            "borderRadius": 26,
+            "category": "123",
+            "tag": null
         }
     ],
     "Setting": {
-        "MainColor": "#c7ac54",
-        "FontFamily": "Tajawal",
-        "FontHeader": "Tajawal",
-        "ProductListLayout": "list",
         "StickyHeader": false,
-        "ShowChat": false,
-        "useMaterial3": false
+        "ShowChat": true,
+        "FontFamily": "Almarai",
+        "FontHeader": "Almarai",
+        "MainColor": "ff52260f",
+        "ProductListLayout": "list",
+        "TabBarConfig": {
+            "enable": true,
+            "isSafeArea": true,
+            "color": null,
+            "colorCart": null,
+            "colorIcon": "ff52260f",
+            "colorActiveIcon": "ffeac85f",
+            "iconSize": 27,
+            "indicatorStyle": "dot",
+            "showFloatingClip": true,
+            "showFloating": true,
+            "enableOnTop": false,
+            "radiusTopLeft": 0,
+            "radiusTopRight": 0,
+            "radiusBottomLeft": 0,
+            "radiusBottomRight": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingTop": 0,
+            "marginTop": 0,
+            "marginBottom": 0,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "TabBarIndicator": {
+                "height": null,
+                "tabPosition": "bottom",
+                "topRightRadius": null,
+                "topLeftRadius": null,
+                "bottomRightRadius": null,
+                "bottomLeftRadius": null,
+                "color": null,
+                "horizontalPadding": null,
+                "verticalPadding": null,
+                "strokeWidth": null,
+                "radius": null,
+                "distanceFromCenter": null,
+                "paintingStyle": "fill"
+            },
+            "TabBarFloating": {
+                "position": 2,
+                "radius": null,
+                "color": null,
+                "location": null,
+                "width": null,
+                "height": null,
+                "elevation": null,
+                "floatingType": "rectangle"
+            }
+        }
     },
     "TabBar": [
         {
-            "layout": "home",
-            "icon": "assets/icons/tabs/icon-home.png"
+            "icon": "assets/icons/tabs/icon-home.png",
+            "pos": 100,
+            "layout": "home"
         },
         {
-            "layout": "category",
-            "categoryLayout": "card",
-            "icon": "assets/icons/tabs/icon-category.png"
+            "icon": "assets/icons/tabs/icon-bell.png",
+            "layout": "notify",
+            "pos": 200
         },
         {
+            "icon": "assets/icons/tabs/icon-home.png",
+            "pos": 300,
+            "layout": "home"
+        },
+        {
+            "icon": "assets/icons/tabs/icon-cart2.png",
             "layout": "cart",
-            "icon": "assets/icons/tabs/icon-cart2.png"
+            "pos": 400
         },
         {
+            "pos": 500,
+            "showChat": false,
             "layout": "profile",
-            "icon": "assets/icons/tabs/icon-user.png",
-            "showChat": true,
-            "showBackground": true,
-            "styleItem": "listTile",
-            "settingStyle": "normal"
+            "icon": "assets/icons/tabs/icon-user.png"
         }
     ],
-    "searchSuggestion": [],
-    "PrivacyPoliciesPageUrlOrId": "https://kanzalsahra.com/privacy-policy/"
-}
+    "Drawer": null,
+    "AppBar": null
+  }

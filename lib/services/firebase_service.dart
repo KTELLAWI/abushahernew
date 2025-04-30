@@ -11,6 +11,7 @@ import '../models/entities/product.dart';
 import '../models/entities/user.dart';
 import 'firebase/index.dart';
 import 'index.dart';
+// import 'package:firebase_app_check/firebase_app_check.dart';
 
 class FirebaseServices extends BaseFirebaseServices {
   static final FirebaseServices _instance = FirebaseServices._internal();
@@ -28,6 +29,12 @@ class FirebaseServices extends BaseFirebaseServices {
   Future<void> init() async {
     var startTime = DateTime.now();
     await Firebase.initializeApp();
+     //       // Activate App Check
+    // await FirebaseAppCheck.instance.activate(
+    //  androidProvider: AndroidProvider.playIntegrity, // For Android
+    // //  appleProvider: AppleProvider.appAttest, // For iOS/macOS
+    //   //webRecaptchaSiteKey: kWebRecaptchaSiteKey, // For web
+    // );
     _isEnabled = kAdvanceConfig.enableFirebase;
 
     /// Not require Play Services
@@ -165,6 +172,9 @@ class FirebaseServices extends BaseFirebaseServices {
     forceResendingToken,
     Duration? timeout,
   }) async {
+//         await _auth.setSettings(
+//   appVerificationDisabledForTesting: false, // Set to true only for testing
+// );
     await _auth!.verifyPhoneNumber(
       phoneNumber: phoneNumber!,
       codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,
