@@ -144,8 +144,8 @@ class LoginSMSScreenState<T extends LoginSMSScreen> extends State<T>
                         child: CountryCodePicker(
                             showDropDownButton: false,
                               favorite: ['SA'],
-                              countryFilter:['SA'],
-                                enabled: false,
+                              countryFilter:['SA',"TR"],
+                                enabled: true,
 
 
 

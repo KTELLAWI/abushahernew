@@ -8,3 +8,90 @@ d087f0616fb1139bc19edc18f549f3dd3a1c1eb1
 await FirebaseAuth.instance.setSettings(
   appVerificationDisabledForTesting: false, // Set to true only for testing
 );
+lib/menu/maintab.dart:1142:36: Error: Can't find ')' to match '('.
+                          BoxShadow(
+                                   ^
+lib/menu/maintab.dart:924:5: Error: The method '_initTabDelegate' isn't defined for the class 'MainTabsState'.
+ - 'MainTabsState' is from 'package:fstore/menu/maintab.dart' ('lib/menu/maintab.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_initTabDelegate'.
+    _initTabDelegate();
+    ^^^^^^^^^^^^^^^^
+lib/menu/maintab.dart:925:5: Error: The method '_initTabData' isn't defined for the class 'MainTabsState'.
+ - 'MainTabsState' is from 'package:fstore/menu/maintab.dart' ('lib/menu/maintab.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_initTabData'.
+    _initTabData(context);
+    ^^^^^^^^^^^^
+lib/menu/maintab.dart:997:7: Error: The method '_initTabData' isn't defined for the class 'MainTabsState'.
+ - 'MainTabsState' is from 'package:fstore/menu/maintab.dart' ('lib/menu/maintab.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_initTabData'.
+      _initTabData(context);
+      ^^^^^^^^^^^^
+lib/menu/maintab.dart:1015:7: Error: The method '_emitChildTabName' isn't defined for the class
+'MainTabsState'.
+ - 'MainTabsState' is from 'package:fstore/menu/maintab.dart' ('lib/menu/maintab.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_emitChildTabName'.
+      _emitChildTabName();
+      ^^^^^^^^^^^^^^^^^
+lib/menu/maintab.dart:1046:36: Error: The getter '_tabListener' isn't defined for the class 'MainTabsState'.
+ - 'MainTabsState' is from 'package:fstore/menu/maintab.dart' ('lib/menu/maintab.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named '_tabListener'.
+      tabController.removeListener(_tabListener);
+                                   ^^^^^^^^^^^^
+lib/menu/maintab.dart:1115:34: Error: No named parameter with the name 'toggleCoinCallback'.
+              child: SideBarMenu(toggleCoinCallback: toggleAnimation),
+                                 ^^^^^^^^^^^^^^^^^^
+lib/menu/sidebar.dart:23:9: Context: Found this candidate, but the arguments don't match.
+  const SideBarMenu();
+        ^^^^^^^^^^^
+lib/menu/maintab.dart:1143:54: Error: The getter 'backgroundColor' isn't defined for the class 'ThemeData'.
+ - 'ThemeData' is from 'package:flutter/src/material/theme_data.dart'
+ ('/opt/homebrew/Caskroom/flutter/3.29.3/flutter/packages/flutter/lib/src/material/theme_data.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named
+'backgroundColor'.
+                            color: Theme.of(context).backgroundColor,
+                                                     ^^^^^^^^^^^^^^^
+lib/menu/maintab.dart:1148:50: Error: The getter 'backgroundColor' isn't defined for the class 'ThemeData'.
+ - 'ThemeData' is from 'package:flutter/src/material/theme_data.dart'
+ ('/opt/homebrew/Caskroom/flutter/3.29.3/flutter/packages/flutter/lib/src/material/theme_data.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named
+'backgroundColor'.
+                        color: Theme.of(context).backgroundColor,
+                                                 ^^^^^^^^^^^^^^^
+lib/menu/maintab.dart:1160:66: Error: The method 'getTabBarMenuAction' isn't defined for the class
+'MainTabsState'.
+ - 'MainTabsState' is from 'package:fstore/menu/maintab.dart' ('lib/menu/maintab.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'getTabBarMenuAction'.
+                            floatingActionButton: showFloating ? getTabBarMenuAction() : null,
+                                                                 ^^^^^^^^^^^^^^^^^^^
+lib/menu/maintab.dart:1213:60: Error: The method 'tabBarMenu' isn't defined for the class 'MainTabsState'.
+ - 'MainTabsState' is from 'package:fstore/menu/maintab.dart' ('lib/menu/maintab.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'tabBarMenu'.
+                                                    child: tabBarMenu(showTabMinimize: true),
+                                                           ^^^^^^^^^^
+lib/menu/maintab.dart:1298:39: Error: 'BottomBarState' isn't a type.
+      return Selector<BottomBarModel, BottomBarState>(
+                                      ^^^^^^^^^^^^^^
+lib/menu/maintab.dart:1299:57: Error: The getter 'state' isn't defined for the class 'BottomBarModel'.
+ - 'BottomBarModel' is from 'package:fstore/models/bottom_bar_model.dart' ('lib/models/bottom_bar_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'state'.
+        selector: (_, bottomBarModel) => bottomBarModel.state,
+                                                        ^^^^^
+lib/menu/maintab.dart:1302:36: Error: The getter 'offset' isn't defined for the class 'Object?'.
+ - 'Object' is from 'dart:core'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'offset'.
+            offset: bottomBarModel.offset,
+                                   ^^^^^^
+lib/menu/maintab.dart:1306:39: Error: The getter 'opacity' isn't defined for the class 'Object?'.
+ - 'Object' is from 'dart:core'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'opacity'.
+              opacity: bottomBarModel.opacity,
+                                      ^^^^^^^
+lib/menu/maintab.dart:1307:22: Error: The method 'tabBarMenu' isn't defined for the class 'MainTabsState'.
+ - 'MainTabsState' is from 'package:fstore/menu/maintab.dart' ('lib/menu/maintab.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'tabBarMenu'.
+              child: tabBarMenu(),
+                     ^^^^^^^^^^
+
+
+I/flutter ( 2960): │ ⛔ Exception: عذرًا، غير مسموح لك بفعل هذا.
+I/flutter ( 2960): └───────────

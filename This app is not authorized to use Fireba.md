@@ -1,0 +1,1 @@
+This app is not authorized to use Firebase Authentication. Please verify that the correct package name, SHA-1, and SHA-256 are configured in the Firebase Console. [ Invalid app info in play_integrity_token ]
